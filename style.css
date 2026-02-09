@@ -1,8 +1,31 @@
-h1, h6, nav {
-    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
-    font-weight: normal;
+h1, h3, h5 {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-h1, h6 {
+h6, nav, ul, p {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+}
+
+h1, h3, h6, p {
     text-align: center;
+    margin: auto;
+}
+
+#info_button{
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type:none;
+    text-decoration: none;
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
 }
