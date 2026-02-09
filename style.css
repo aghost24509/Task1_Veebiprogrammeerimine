@@ -1,8 +1,8 @@
-h1, nav {
+h1, h6, nav {
     font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
     font-weight: normal;
 }
 
-h1 {
+h1, h6 {
     text-align: center;
 }
