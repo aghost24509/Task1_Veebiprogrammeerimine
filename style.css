@@ -26,6 +26,15 @@ ul{
     list-style-type:none;
     text-decoration: none;
 }
+
 a:link, a:visited, a:active{
     text-decoration: none;
+}
+
+.card-img-top{
+    height: 30%;
+}
+
+.card-title{
+    text-align: center;
 }
