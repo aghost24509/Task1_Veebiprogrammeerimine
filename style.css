@@ -3,7 +3,6 @@ h1, h3, h5 {
     font-weight: 400;
     font-style: normal;
 }
-
 h6, nav, ul, p {
     font-family: "Doto", sans-serif;
     font-optical-sizing: auto;
@@ -11,30 +10,38 @@ h6, nav, ul, p {
     font-style: normal;
     font-variation-settings: "ROND" 0;
 }
-
 h1, h3, h6, p {
     text-align: center;
-    margin: auto;
+    margin: 0.5rem 0;
 }
-
-#info_button{
-    margin: auto;
-    text-align: center;
-}
-
 ul{
     list-style-type:none;
     text-decoration: none;
 }
-
 a:link, a:visited, a:active{
     text-decoration: none;
 }
 
+#info_button{
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#footer_title{
+    margin-top: 5%;
+}
 .card-img-top{
-    height: 30%;
+    max-height: 180px;
+    object-fit: contain;
 }
 
 .card-title{
     text-align: center;
+}
+
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

@@ -16,148 +16,199 @@
 
 <body>
     <!--NavBar-->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images\nav_logo.jpg" alt="Logo" width="40" height="40"
-                    class="d-inline-block align-text-center">
-                BYTESEC.Artur Veskus
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/nav_logo.jpg" alt="Logo" width="40" height="40" class="me-2 rounded">
+                <span>BYTESEC</span>
             </a>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="services.html">Services</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="info.html" role="button"
-                        aria-expanded="false">Info</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                        <li><a class="dropdown-item" href="about_us.html">About us</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacts.html">Contacts</a>
-                </li>
-            </ul>
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Info
+                        </a>
+                        <ul class="dropdown-menu text-center text-lg-start">
+                            <li>
+                                <a class="dropdown-item" href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about_us.html">About Us</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!--Home page-->
 
-    <div> <!--Hero section-->
-        <h6>// SYSTEM BREACH DETECTED</h6>
-        <h1 class="title">We Hack Your PC Problems Away</h1>
-        <p>ByteSec PC Services — your local crew for cleaning, building, and supercharging computers. No problem too
-            complex.</p>
+    <!--Hero section-->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <h6 class="mb-2">// SYSTEM BREACH DETECTED</h6>
+            <h1 class="mb-3">We Hack Your PC Problems Away</h1>
+            <p class="mb-4">ByteSec PC Services — your local crew for cleaning, building, and supercharging computers.
+                No problem too
+                complex.</p>
 
-        <!--Nav buttons-->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-outline-danger">VIEW SERVICES</button>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-outline-warning">GET IN TOUCH</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div> <!--Service section-->
-
-        <h3>Our Services</h3>
-        <p>Three ways we keep your machine running like new.</p>
-
-        <div class="card-group">
-            <div class="card">
-                <img src="icons\computer-desktop-laptop-2-svgrepo-com.svg" class="card-img-top" alt="computer_icon">
-                <div class="card-body">
-                    <h5 class="card-title">PC Cleaning</h5>
-                    <p class="card-text">Deep dust removal, thermal paste swap, and full internal cleanup. Your rig
-                        deserves a fresh start.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons\gear-maintenance-repair-svgrepo-com.svg" class="card-img-top" alt="cpu_icon">
-                <div class="card-body">
-                    <h5 class="card-title">PC Assembly</h5>
-                    <p class="card-text">Custom builds from scratch. We help pick parts, assemble, cable-manage, and
-                        test everything.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons\bug-virus-svgrepo-com.svg" class="card-img-top" alt="pc_tuning">
-                <div class="card-body">
-                    <h5 class="card-title">PC Tuning</h5>
-                    <p class="card-text">Performance optimization, overclocking, driver updates, and software setup for
-                        peak speed.</p>
+            <!--Nav buttons-->
+            <div class="container text-center">
+                <div class="row g-3 justify-content-center">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-danger">VIEW SERVICES</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-warning">GET IN TOUCH</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div> <!--Metrics section-->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    abc
+    <!--Service section-->
+    <section class="py-4 py-md-5">
+        <div class="container">
+            <h3 class="mb-2 text-center">Our Services</h3>
+            <p class="mb-4 text-center">Three ways we keep your machine running like new.</p>
+
+            <div class="card-group">
+                <div class="card border-0">
+                    <img src="icons/computer-desktop-laptop-2-svgrepo-com.svg" class="card-img-top" alt="computer_icon">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2">PC Cleaning</h5>
+                        <p class="card-text mb-0">Deep dust removal, thermal paste swap, and full internal cleanup. Your
+                            rig
+                            deserves a fresh start.</p>
+                    </div>
                 </div>
-                <div class="col">
-                    abc
+                <div class="card border-0">
+                    <img src="icons/gear-maintenance-repair-svgrepo-com.svg" class="card-img-top" alt="cpu_icon">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">PC Assembly</h5>
+                        <p class="card-text mb-0">Custom builds from scratch. We help pick parts, assemble,
+                            cable-manage, and
+                            test everything.
+                        </p>
+                    </div>
                 </div>
-                <div class="col">
-                    abc
+                <div class="card border-0">
+                    <img src="icons/bug-virus-svgrepo-com.svg" class="card-img-top" alt="pc_tuning">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">PC Tuning</h5>
+                        <p class="card-text mb-0">Performance optimization, overclocking, driver updates, and software
+                            setup
+                            for
+                            peak speed.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div> <!--Contacts section-->
-        <h3>Ready to Upgrade?</h3>
-        <p>Drop us a line and let the ByteSec crew handle your PC problems.</p>
-        <div id="info_button"><button type="button" class="btn btn-outline-info">Info</button></div>
-    </div>
+    <!--Metrics section-->
+    <section class="py-4 bg-body-tertiary">
+        <div>
+            <div class="container text-center">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <h5>300+</h5>
+                        <p class="mb-0 text-muted">PCs Fixed</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>24h</h5>
+                        <p class="mb-0 text-muted">Avg Turnaround</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>100%</h5>
+                        <p class="mb-0 text-muted">Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div> <!--Footer section-->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col"> <!--Description of the business-->
+    <!--Contacts section-->
+    <section class="py-4 py-md-5 text-center">
+        <div class="contacts_container my-3 my-md-4">
+            <h3 class="mb-2">Ready to Upgrade?</h3>
+            <p class="mb-4 text-muted">Drop us a line and let the ByteSec crew handle your PC problems.</p>
+            <div id="info_button"><button type="button" class="btn btn-outline-info">CONTACTS</button></div>
+        </div>
+    </section>
 
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <a href="index.html">
-                                <div class="col-md-4">
-                                    <img src="images\nav_logo.jpg" class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">BYTESEC.Artur Veskus</h5>
+    <!--Footer section-->
+    <footer class="bg-dark text-light pt-4 pb-3">
+        <div>
+            <div class="container text-center">
+                <div class="row align-items-center text-center text-md-start">
+
+                    <!--Brand-->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <a href="index.html" class="text-light text-decoration-none">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <span class="helper"></span>
+                                        <img src="images/nav_logo.jpg" class="img-fluid rounded-start" alt="Logo"
+                                            width="50%" height="50%" class="me-3 rounded">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 id="footer_title" class="mb-0">BYTESEC</h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6"> <!--Navigation section-->
+
+                        <ul class="list-unstyled mb-0 text-center text-md-end">
+                            <li class="mb-1"><a href="index.html">Home</a></li>
+                            <li class="mb-1"><a href="services.html">Services</a></li>
+                            <li class="mb-1"><a href="info.html">Info</a></li>
+                            <li class="mb-1"><a href="faq.html">FAQ</a></li>
+                            <li class="mb-1"><a href="about_us.html">About us</a></li>
+                            <li class="mb-1"><a href="contacts.html">Contacts</a></li>
+                        </ul>
+
                     </div>
                 </div>
 
-                <div class="col"> <!--Navigation section-->
+                <hr class="border-secondary my-3">
 
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="info.html">Info</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="about_us.html">About us</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
-                    </ul>
-
+                <!-- Copyright -->
+                <div class="text-center small text-secondary">
+                    © 2026 BYTESEC — All rights reserved
                 </div>
             </div>
-        </div>
-    </div>
+    </footer>
 
 
 
