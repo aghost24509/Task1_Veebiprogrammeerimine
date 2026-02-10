@@ -1,3 +1,18 @@
+body{
+    background: #000000;
+    background: radial-gradient(circle,
+    rgba(0, 0, 0, 1) 13%,
+    rgba(57, 1, 145, 1) 30%,
+    rgba(115, 48, 191, 1) 43%,
+    rgba(221, 163, 255, 1) 54%,
+    rgba(102, 12, 150, 1) 65%,
+    rgba(0, 0, 0, 1) 94%);
+}
+
+span, section{
+    color: white;
+}
+
 h1, h3, h5 {
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -9,6 +24,7 @@ h6, nav, ul, p {
     font-weight: 800;
     font-style: normal;
     font-variation-settings: "ROND" 0;
+    
 }
 h1, h3, h6, p {
     text-align: center;
@@ -31,6 +47,7 @@ a:link, a:visited, a:active{
 #footer_title{
     margin-top: 5%;
 }
+
 .card-img-top{
     max-height: 180px;
     object-fit: contain;
@@ -44,4 +61,10 @@ a:link, a:visited, a:active{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+}
+
+.card {
+    background-color: rgba(234, 203, 245, 0.32) !important; /* remove default white */
+    border: none; /* optional: remove borders */
+    box-shadow: none; /* optional: remove shadow */
 }
